@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1E1D1D"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NETFLIX"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="1dp"
+        android:textSize="34dp"
+        android:textColor="@color/red"
+        android:textStyle="bold"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/trendingRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFE9E9" />
+
+    <Button
+        android:id="@+id/popularBtn"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#D60606"
+        android:text="Popular Movies"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#FA0808"
+        />
+
+    <Button
+        android:id="@+id/upcomingBtn"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#D60606"
+        android:text="Upcoming Movies"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#FA0808"
+        />
+
+    <Button
+        android:id="@+id/topRatedBtn"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#D60606"
+        android:text="Top Rated Movies"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#FA0808"
+        />
+    <Button
+        android:id="@+id/nowPlayingBtn"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#D60606"
+        android:text="Now Playing Movies"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#FA0808"
+        />
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

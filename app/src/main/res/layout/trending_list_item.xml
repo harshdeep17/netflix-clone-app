@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="487dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purple_700"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/trendingIV"
+                android:layout_width="395dp"
+                android:layout_height="439dp"
+                android:rotation="333"
+                android:rotationX="-2"
+                android:rotationY="158"
+                android:scaleType="fitCenter"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/trendingTV"
+                android:layout_width="374dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:text="TextView"
+                android:textColor="@color/yellow"
+                android:textSize="24dp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
